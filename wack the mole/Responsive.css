@@ -1,0 +1,124 @@
+*{
+    background-color: rgb(129, 197, 228);
+}
+
+body{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+    line-height: 1;
+    margin-bottom: 0px;
+}
+
+.score{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+button.first{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 100px;
+    font-weight:bold;
+    padding: 0px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(111, 193, 232);
+    font-size: 17px;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+
+.allmole{
+    width: 50%;
+    margin: auto;
+    column-count: 3;
+}
+
+.hole{
+    background-image: url(dirt.png);    
+    background-repeat: no-repeat;
+    background-size: 70%;
+    height: 150px;
+    width: 100%;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+
+.up{
+    height: 150px;
+    background-image: url(mole.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
+@media only screen and (max-width: 480px){
+    button.first{
+        display: none;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .allmole{
+        width:100%;
+        column-count: 2;
+    }
+    .hole{
+        height: 130px;
+    }
+    button.second{
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        font-weight:bold;
+        padding: 0px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width: 1024px){
+    button.first{
+        display: none;
+    }
+    .allmole{
+        width:100%;
+    }
+    .hole{
+        height: 350px;
+    }
+    button.second{
+        width: 200px;
+        height: 70px;
+        border-radius: 50px;
+        font-weight:bold;
+        font-size: 30px;
+        padding: 0px;
+        margin-top: 150px;
+    }
+    h1{
+        margin-bottom: 50px;
+    }
+    .score{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+    button.second{
+        display: none;
+    }
+}
